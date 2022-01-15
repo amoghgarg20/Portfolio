@@ -24,7 +24,7 @@ export default class Header extends Component {
             <div className="banner-text">
                <h1 className="responsive-headline"><Typewriter
                   onInit={(typewriter)=> {
-                  typewriter.typeString("Hello,I am a Learner!").pauseFor(1000).deleteChars(15).typeString("I am Amogh Garg!").start();
+                  typewriter.typeString("Hello,I am Amogh Garg!").start();
                   }}/></h1>
           
                <hr/>
