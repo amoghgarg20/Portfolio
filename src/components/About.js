@@ -36,7 +36,7 @@ export default class About extends Component {
                     <br></br>
                     <span>Email-ID: <a href="mailto: amoghgarg9@gmail.com">amoghgarg9@gmail.com</a></span>
                     <br/>
-                    <span>Resume: <a href="/images/1.png" download="Amogh Garg-CV">
+                    <span>Resume: <a href="/images/Amogh Garg-Resume.pdf" download="Amogh Garg-Resume">
           Click to Download
         </a></span>
        					   </p>
