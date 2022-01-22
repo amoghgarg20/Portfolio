@@ -27,7 +27,7 @@ let resumeData = {
         }
       ],
     "aboutme":"I am a sophomore at Netaji Subas University of Technology, New Delhi, pursuing BTech in Computer Engineering. I am a Machine Learning enthusiast and also like to work on Data Analysis using Python. Also, I am proficient with working on other technologies like HTML,CSS,Javascript,React,SQL and PHP. I use C++ as a programming language for DSA.",
-    "address":"H-804, Ajnara Landmark, Plot-18, Sector-4, Vaishali, Ghaziabad, Uttar-Pradesh, India",
+    "address":"India",
     "mobile":"8130463841",
     "email":"amoghgarg9@gmail.com",
     "education":[
@@ -66,13 +66,10 @@ let resumeData = {
         "skillname":"C++"
       },
       {
-        "skillname":"HTML5"
+        "skillname":"HTML"
       },
       {
         "skillname":"CSS"
-      },
-      {
-        "skillname":"Javascript"
       },
       {
         "skillname":"SQL"
@@ -81,7 +78,7 @@ let resumeData = {
         "skillname":"PHP"
       },
       {
-        "skillname":"React"
+        "skillname":"ReactJS"
       }
     ],
     "portfolio":[
@@ -119,7 +116,16 @@ let resumeData = {
         "description":"This is a sample testimonial",
         "name":"Some technical guy"
       }
+    ],
+    "album":[
+      {
+        "description":"This is a sample testimonial",
+      },
+      {
+        "description":"This is a sample testimonial",
+      }
     ]
+
   }
   
   export default resumeData
