@@ -32,7 +32,7 @@ let resumeData = {
     "email":"amoghgarg9@gmail.com",
     "education":[
       {
-        "UniversityName":"Netaji Subas University of Technology,New Delhi",
+        "UniversityName":"Netaji Subhas University of Technology,New Delhi",
         "specialization":"Computer Engineering",
         "YearOfPassing":"2024",
         "Marks":"9.09 CGPA upto 2nd Sem"
@@ -57,7 +57,7 @@ let resumeData = {
         "YearOfLeaving":" Since 2020",
       },
     ],
-    "skillsDescription":"Following are my skills:",
+    "skillsDescription":"Following are my technical skills:",
     "skills":[
       {
         "skillname":"Python"
@@ -79,6 +79,14 @@ let resumeData = {
       },
       {
         "skillname":"ReactJS"
+      }
+    ],
+    "sport_skills":[
+      {
+        "skillname":"Cricket"
+      },
+      {
+        "skillname":"Swimming"
       }
     ],
     "portfolio":[

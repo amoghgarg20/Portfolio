@@ -63,19 +63,43 @@ export default  class Resume extends Component {
          <div className="row skill">
 
             <div className="three columns header-col">
-               <h1><span>Skills</span></h1>
+               <h1><span>Technical Skills</span></h1>
             </div>
 
             <div className="nine columns main-col">
-
-               <p>
-               {resumeData.skillsDescription}
-               </p>
 
    				<div>
    				   <ul className="skills">
                 {
                   resumeData.skills && resumeData.skills.map((item) => {
+                    return(
+                      <li><h5>{item.skillname}</h5></li>
+              
+                    )
+                  })
+                }
+
+   					</ul>
+
+   				</div>
+
+   			</div>
+
+         </div>
+         </Bounce>
+         <Bounce right>
+         <div className="row skill">
+
+            <div className="three columns header-col">
+               <h1><span>Sport Skills</span></h1>
+            </div>
+
+            <div className="nine columns main-col">
+
+   				<div>
+   				   <ul className="skills">
+                {
+                  resumeData.sport_skills && resumeData.sport_skills.map((item) => {
                     return(
                       <li><h5>{item.skillname}</h5></li>
               
