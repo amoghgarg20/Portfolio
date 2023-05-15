@@ -515,11 +515,13 @@ ul#nav li.current a {
 /* Portfolio Content */
 #portfolio-wrapper .columns {
   margin-bottom: 36px;
+  height: fit-content;
 }
 .portfolio-item .item-wrap {
-  background: #fff;
-  overflow: scroll;
+  background: black;
+  overflow: auto;
   position: relative;
+  height: 250px;
 
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -540,7 +542,7 @@ ul#nav li.current a {
   width: 100%;
   height: 100%;
 
-  opacity: 0;
+  opacity: 1;
   -moz-opacity: 0;
   filter: alpha(opacity=0);
 
@@ -548,8 +550,8 @@ ul#nav li.current a {
   -moz-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
-
-  background: url(../images/overlay-bg.png) repeat;
+  background-color: black;
+  /* background: url(../images/overlay-bg.png) repeat; */
 }
 .portfolio-item .item-wrap .link-icon {
   display: block;

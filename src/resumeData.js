@@ -96,37 +96,30 @@ let resumeData = {
     {
       name: "VidSum",
       description:
-        "NLP system that records online meetings/videos and generate a summary of the content in text format.",
+        "NLP system in the form of extension that automatically records online meetings/webinars/videos and generate a summary of the content in text format.",
       imgurl: "images/2.png",
       siteurl: "https://github.com/amoghgarg20/Summary-Generator",
     },
     {
       name: "Smart Login System",
       description:
-        "A face login system which can be easily integrated with web-applications for login purposes.",
-      imgurl: "images/2.png",
+        "A face login system which can be easily integrated with different web-applications for login purposes eliminating the need to remember usernames and passwords.",
+      imgurl: "images/4.png",
       siteurl: "https://github.com/amoghgarg20/Login-System",
     },
     {
-      name: "CodeInspire",
+      name: "IOT Project",
       description:
-        "A site made for CodeInspire-Inspirathon to promote works of rural women.",
+        "A smart system which measures the hydration level of the user in real time. (Link to the research paper will be available soon)",
       imgurl: "images/2.png",
-      siteurl: "https://github.com/amoghgarg20/CodeInspire",
+      siteurl: "/",
     },
     {
-      name: "DBMS Project",
+      name: "Grantify",
       description:
-        "Blood Bank Management System made using HTML,CSS,PHP AND SQL.",
+        "An integrated and robust online platform for the researchers providing the information and relevant details about national/international research grants. It was developed for the Grand Finale of SIH'22.",
       imgurl: "images/3.png",
-      siteurl: "https://github.com/amoghgarg20/DBMS-Project",
-    },
-    {
-      name: "Tritinerary",
-      description:
-        "A site for travellers where they can plan their trip by making their own itinerary.",
-      imgurl: "images/1.png",
-      siteurl: "https://github.com/amoghgarg20/Tritinerary",
+      siteurl: "https://github.com/amoghgarg20/AAVSAM",
     },
   ],
   testimonials: [
