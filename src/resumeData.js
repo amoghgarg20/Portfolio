@@ -33,19 +33,19 @@ let resumeData = {
     "education":[
       {
         "UniversityName":"Netaji Subhas University of Technology,New Delhi",
-        "specialization":"Computer Engineering",
+        "specialization":"B.Tech in Computer Engineering",
         "YearOfPassing":"2024",
         "Marks":"9.09 CGPA upto 2nd Sem"
       },
       {
         "UniversityName":"Amity International School, Mayur Vihar",
-        "specialization":"Class XII Boards(CBSE)",
+        "specialization":"Class XII(CBSE)",
         "YearOfPassing":"2020",
         "Marks":"96.2%"
       },
       {
         "UniversityName":"Amity International School, Mayur Vihar",
-        "specialization":"Class X Boards(CBSE)",
+        "specialization":"Class X(CBSE)",
         "YearOfPassing":"2018",
         "Marks":"96.8%"
       }

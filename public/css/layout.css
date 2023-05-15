@@ -700,7 +700,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #2B2B2B;
+   background: #ddd8d8;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
@@ -715,10 +715,10 @@ call-to-action .button {
    padding-bottom: 66px;
 }
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
+   font: 24px 'opensans-bold', sans-serif;   
    text-transform: uppercase;
    letter-spacing: 3px;
-   color: #fff;
+   color: black;
 }
 #testimonials h1 span { display: none; }
 #testimonials .header-col { padding-top: 9px; }
@@ -732,7 +732,13 @@ call-to-action .button {
    float: left;
    color: #fff;
 }
-
+#zoomA {
+   margin-left: 150px;
+   width: 600px;
+   height: 600px;
+   transition: transform ease-in-out 0.3s;
+ }
+ #zoomA:hover { transform: scale(1.2); }
 /*	Blockquotes */
 #testimonials blockquote {
    margin: 0 0px 30px 0px;
