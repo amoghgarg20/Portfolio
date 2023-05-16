@@ -1003,6 +1003,17 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #contact {
+  background: black;
+  padding-top: 96px;
+  padding-bottom: 102px;
+  color: #ffffff;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+}
+#contact .section-head {
+  margin-bottom: 42px;
+}
+#footer {
   background: #191919
     url(https://media.giphy.com/media/cQhmYBg9qPaLYdqajA/giphy.gif) no-repeat
     top center;
@@ -1034,6 +1045,11 @@ call-to-action .button {
 }
 #contact h1 span {
   display: none;
+}
+#contact h2 {
+  color: white;
+  padding: 10px;
+  margin: 10px;
 }
 #contact h1:before {
   font-family: "FontAwesome";
