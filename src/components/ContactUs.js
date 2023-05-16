@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import config from "./config";
 import Bounce from "react-reveal/Bounce";
-// Access the variables
-const botapi = config.BOT_API;
-const chatid = config.CHAT_ID;
 export default class ContactUs extends Component {
   constructor(props) {
     super(props);
@@ -26,9 +22,9 @@ export default class ContactUs extends Component {
 
     try {
       await axios.post(
-        "https://api.telegram.org/bot" + botapi + "/sendMessage",
+        "https://api.telegram.org/bot6144324235:AAFrEG4Q2sDdRTbbyLJfrnHTF-YnxOB5P1w/sendMessage",
         {
-          chat_id: chatid,
+          chat_id: "1404048265",
           text: `
             Name: ${name}
             Contact Number: ${number}
