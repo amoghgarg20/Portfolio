@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
-import Bounce from 'react-reveal/Bounce';
+import React, { Component } from "react";
+import Bounce from "react-reveal/Bounce";
 export default class Testimonials extends Component {
   render() {
-    
     let resumeData = this.props.resumeData;
     return (
       <Bounce right>
-      <section id="testimonials">
-        <div className="text-container">
-          <div className="row">
-          <h1>TESTIMONIAL</h1>
-            <div className="two columns header-col">
-            
-            </div>
-            {/* <div className="ten columns flex-container"> */}
-              <img src="images/5.jpg" id="zoomA"></img>
+        <section id="testimonials">
+          <div className="text-container">
+            <div className="row">
+              <h1>TESTIMONIAL</h1>
+              <div className="two columns header-col" />
+              {/* <div className="ten columns flex-container"> */}
+              <img src="images/5.jpg" id="zoomA" />
               {/* <div className="flexslider">
                 <ul className="slides">
                   {
@@ -33,12 +30,13 @@ export default class Testimonials extends Component {
                   }
                 </ul>
               </div> div.flexslider ends */}
-            {/* </div> div.flex-container ends */}
-          </div> {/* row ends */}
-        </div>  {/* text-container ends */}
-      </section>
+              {/* </div> div.flex-container ends */}
+            </div>{" "}
+            {/* row ends */}
+          </div>{" "}
+          {/* text-container ends */}
+        </section>
       </Bounce>
-        );
-        
+    );
   }
 }
