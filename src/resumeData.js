@@ -53,12 +53,14 @@ let resumeData = {
   ],
   work: [
     {
-      CompanyName: "International Organisation of Software Developers-NSUT",
+      CompanyName:
+        "International Organisation of Software Developers (DEVCOMM)-NSUT",
       specialization: "Machine Learning Head",
       YearOfLeaving: " Since 2022",
     },
     {
-      CompanyName: "International Organisation of Software Developers-NSUT",
+      CompanyName:
+        "International Organisation of Software Developers (DEVCOMM)-NSUT",
       specialization: "Executive Commitee Member in ML and DSA Department",
       YearOfLeaving: " 2020-2022",
     },
@@ -76,9 +78,6 @@ let resumeData = {
     },
     {
       skillname: "CSS",
-    },
-    {
-      skillname: "SQL",
     },
     {
       skillname: "ReactJS",
