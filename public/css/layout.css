@@ -529,9 +529,12 @@ ul#nav li.current a {
 }
 
 .div-button {
+  width: 20%;
+  margin: 15px;
+  padding: 10px;
   padding: 10px 20px;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #ebeeee;
+  color: #11abb0;
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -539,7 +542,7 @@ ul#nav li.current a {
 }
 
 .div-button:hover {
-  background-color: #45a049;
+  background-color: #11abb0;
 }
 
 .div-button:focus {
@@ -547,7 +550,7 @@ ul#nav li.current a {
 }
 
 .div-button:active {
-  background-color: #3e8e41;
+  background-color: #f06000;
 }
 
 /* Portfolio Content */

@@ -11,12 +11,25 @@ export default class Profile extends Component {
               <h1>
                 Check out some of my coding platform's profiles.
                 <br />
-                Right click and open the link in new tab.
               </h1>
               <div>
                 <div className="button-container">
-                  <button className="div-button">Click Me</button>
-                  <button className="div-button">Click Me</button>
+                  <button className="div-button">
+                    <a href="https://leetcode.com/amoghgarg20/">Leetcode</a>
+                  </button>
+                  <button className="div-button">
+                    <a href="https://codeforces.com/profile/amoghgarg20">
+                      Codeforces
+                    </a>
+                  </button>
+                  <button className="div-button">
+                    <a href="https://www.kaggle.com/amoghgarg20">Kaggle</a>
+                  </button>
+                  <button className="div-button">
+                    <a href="https://auth.geeksforgeeks.org/user/amoghgarg9/practice">
+                      GFG
+                    </a>
+                  </button>
                 </div>
               </div>
             </div>
