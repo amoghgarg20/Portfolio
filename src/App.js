@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
+import Profile from "./components/Profile";
 import Album from "./components/Album";
 import Testimonials from "./components/Testimonials";
 import ContactUs from "./components/ContactUs";
@@ -16,6 +17,7 @@ class App extends Component {
         <About resumeData={resumeData} />
         <Resume resumeData={resumeData} />
         <Portfolio resumeData={resumeData} />
+        <Profile resumeData={resumeData} />
         <Album resumeData={resumeData} />
         <Testimonials resumeData={resumeData} />
         <ContactUs resumeData={resumeData} />
