@@ -26,8 +26,8 @@ export default class Resume extends Component {
                           <span>&bull;</span>{" "}
                           <em className="date"> {item.time}</em>
                         </p>
+                        <p>{item.Description}</p>
                       </div>
-                      <div>{item.Description}</div>
                     </div>
                   );
                 })}
@@ -79,6 +79,7 @@ export default class Resume extends Component {
                           <span>&bull;</span>{" "}
                           <em className="date"> {item.YearOfLeaving}</em>
                         </p>
+                        <p>{item.Description}</p>
                       </div>
                     </div>
                   );

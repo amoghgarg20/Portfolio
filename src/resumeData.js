@@ -67,12 +67,16 @@ let resumeData = {
         "International Organisation of Software Developers (DEVCOMM)-NSUT",
       specialization: "Machine Learning Head",
       YearOfLeaving: " Since 2022",
+      Description:
+        "Lead a team of 10 students, worked on a project to develop a software which can be used to generate summary of webinars, mentored juniors on several ML related projects, conducted sessions and webinars on basics of ML, hosted technical fests, events and competitions related to Data-science and ML.",
     },
     {
       CompanyName:
         "International Organisation of Software Developers (DEVCOMM)-NSUT",
       specialization: "Executive Commitee Member in ML and DSA Department",
       YearOfLeaving: " 2020-2022",
+      Description:
+        "Worked as an individual contributor, worked on ML related projects and hosted sessions and webinars on basics of ML.",
     },
   ],
   skillsDescription: "Following are my technical skills:",
@@ -84,6 +88,9 @@ let resumeData = {
       skillname: "C++",
     },
     {
+      skillname: "Microsoft Azure",
+    },
+    {
       skillname: "HTML",
     },
     {
@@ -91,6 +98,15 @@ let resumeData = {
     },
     {
       skillname: "ReactJS",
+    },
+    {
+      skillname: "SQL",
+    },
+    {
+      skillname: "Git",
+    },
+    {
+      skillname: "AWS",
     },
   ],
   sport_skills: [
