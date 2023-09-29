@@ -27,7 +27,7 @@ let resumeData = {
     },
   ],
   aboutme:
-    "As a pre-final year student pursuing a degree in Computer Science and Engineering, I am eager to learn and apply my skills in the field. I have a strong foundation in programming languages such as C++ and Python, and am proficient in data structures and algorithms. I am also interested in exploring new technologies and fields such as Machine Learning and Data-Science and staying up-to-date with the latest developments in the field. I am looking for opportunities to continue learning and growing as a software engineer while making meaningful contributions to the industry",
+    "As a final year student pursuing a degree in Computer Science and Engineering, I am eager to learn and apply my skills in the field. I have a strong foundation in programming languages such as C++ and Python, and am proficient in data structures and algorithms. I am also interested in exploring new technologies and fields such as Machine Learning and Data-Science and staying up-to-date with the latest developments in the field. I am looking for opportunities to continue learning and growing as a software engineer while making meaningful contributions to the industry",
   address: "India",
   mobile: "8130463841",
   email: "amoghgarg9@gmail.com",
@@ -36,7 +36,7 @@ let resumeData = {
       UniversityName: "Netaji Subhas University of Technology,New Delhi",
       specialization: "B.Tech in Computer Engineering",
       YearOfPassing: "2024",
-      Marks: "8.85 CGPA upto 5th Sem",
+      Marks: "8.90 CGPA upto 6th Sem",
     },
     {
       UniversityName: "Amity International School, Mayur Vihar",
@@ -51,18 +51,32 @@ let resumeData = {
       Marks: "96.8%",
     },
   ],
+  internship: [
+    {
+      OrgName: "Microsoft India (R&D) Pvt. Ltd.",
+      role: "SWE Intern",
+      location: "Noida",
+      time: "May'23 - Jul'23",
+      Description:
+        "Worked with Intune Data Infrastructure team under Security Org and was responsible for doing a proof of concept regarding consolidation of multiple routes and target data sources in Intune reporting pipeline. Worked on Python and Microsoft Azure services such as Azure Data Lake Storage, Microsoft Purview, Azure Synapse Analytics, Delta Parquet format, dedicated SQL pools, Spark pools, Azure Data Factory, ETL Pipelines etc.",
+    },
+  ],
   work: [
     {
       CompanyName:
         "International Organisation of Software Developers (DEVCOMM)-NSUT",
       specialization: "Machine Learning Head",
       YearOfLeaving: " Since 2022",
+      Description:
+        "Lead a team of 10 students, worked on a project to develop a software which can be used to generate summary of webinars, mentored juniors on several ML related projects, conducted sessions and webinars on basics of ML, hosted technical fests, events and competitions related to Data-science and ML.",
     },
     {
       CompanyName:
         "International Organisation of Software Developers (DEVCOMM)-NSUT",
       specialization: "Executive Commitee Member in ML and DSA Department",
       YearOfLeaving: " 2020-2022",
+      Description:
+        "Worked as an individual contributor, worked on ML related projects and hosted sessions and webinars on basics of ML.",
     },
   ],
   skillsDescription: "Following are my technical skills:",
@@ -74,6 +88,9 @@ let resumeData = {
       skillname: "C++",
     },
     {
+      skillname: "Microsoft Azure",
+    },
+    {
       skillname: "HTML",
     },
     {
@@ -81,6 +98,15 @@ let resumeData = {
     },
     {
       skillname: "ReactJS",
+    },
+    {
+      skillname: "SQL",
+    },
+    {
+      skillname: "Git",
+    },
+    {
+      skillname: "AWS",
     },
   ],
   sport_skills: [
