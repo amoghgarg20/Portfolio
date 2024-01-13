@@ -34,7 +34,7 @@ let resumeData = {
   education: [
     {
       UniversityName: "Netaji Subhas University of Technology,New Delhi",
-      specialization: "B.Tech in Computer Science & Engineering",
+      specialization: "B.Tech in Computer Science and Engineering",
       YearOfPassing: "2024",
       Marks: "8.90 CGPA upto 6th Sem",
       link: "/images/Transcript.pdf",
