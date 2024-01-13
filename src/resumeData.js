@@ -34,21 +34,27 @@ let resumeData = {
   education: [
     {
       UniversityName: "Netaji Subhas University of Technology,New Delhi",
-      specialization: "B.Tech in Computer Engineering",
+      specialization: "B.Tech in Computer Science & Engineering",
       YearOfPassing: "2024",
       Marks: "8.90 CGPA upto 6th Sem",
+      link: "/images/Transcript.pdf",
+      name: "Transcript",
     },
     {
       UniversityName: "Amity International School, Mayur Vihar",
       specialization: "Class XII(CBSE)",
       YearOfPassing: "2020",
       Marks: "96.2%",
+      link: "/images/XII Marksheet.pdf",
+      name: "XII Marksheet",
     },
     {
       UniversityName: "Amity International School, Mayur Vihar",
       specialization: "Class X(CBSE)",
       YearOfPassing: "2018",
       Marks: "96.8%",
+      link: "/images/X Marksheet.pdf",
+      name: "X Marksheet",
     },
   ],
   internship: [
@@ -59,6 +65,18 @@ let resumeData = {
       time: "May'23 - Jul'23",
       Description:
         "Worked with Intune Data Infrastructure team under Security Org and was responsible for doing a proof of concept regarding consolidation of multiple routes and target data sources in Intune reporting pipeline. Worked on Python and Microsoft Azure services such as Azure Data Lake Storage, Microsoft Purview, Azure Synapse Analytics, Delta Parquet format, dedicated SQL pools, Spark pools, Azure Data Factory, ETL Pipelines etc.",
+      Skills:
+        "Azure Services, Data Engineering, Cloud, System Design, Python, Spark, Big Data handling using Delta Parquet Format.",
+    },
+    {
+      OrgName: "Microsoft India (R&D) Pvt. Ltd.",
+      role: "Mentee at Microsoft Engage Program",
+      location: "Remote",
+      time: "May'22 - June'22",
+      Description:
+        "Under the mentorship of senior developers, worked on a project which was concerned with building a browser-based application or a native mobile application demonstrating the application of Face Recognition technology.",
+      Skills:
+        "Python, Flask, HTML, CSS, Computer Vision, Facenet Model, Full stack development, MongoDB.",
     },
   ],
   work: [

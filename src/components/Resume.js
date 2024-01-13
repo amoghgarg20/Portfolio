@@ -27,6 +27,10 @@ export default class Resume extends Component {
                           <em className="date"> {item.time}</em>
                         </p>
                         <p>{item.Description}</p>
+                        <p>
+                          {" "}
+                          <b>Skills :</b> {item.Skills}
+                        </p>
                       </div>
                     </div>
                   );
@@ -53,7 +57,15 @@ export default class Resume extends Component {
                           <span>&bull;</span>{" "}
                           <em className="date">{item.YearOfPassing}</em>
                         </p>
-                        <p>Grades: {item.Marks}</p>
+                        <p>
+                          <b>Grades:</b> {item.Marks}
+                        </p>
+                        <p className="info">
+                          Transcipt:{" "}
+                          <a href={item.link} download={item.n}>
+                            Download
+                          </a>
+                        </p>
                       </div>
                     </div>
                   );

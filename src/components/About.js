@@ -36,7 +36,7 @@ export default class About extends Component {
                         href="/images/Amogh Garg-Resume.pdf"
                         download="Amogh Garg-Resume"
                       >
-                        Click to Download
+                        Download
                       </a>
                     </span>
                   </p>
