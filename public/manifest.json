@@ -1,5 +1,5 @@
 {
-  "short_name": "Amogh Garg|Portfolio",
+  "short_name": "Amogh Garg",
   "name": "Portfolio website of Amogh Garg",
   "icons": [
     {
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://amoghgarg.com/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
