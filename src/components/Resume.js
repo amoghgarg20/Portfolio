@@ -57,10 +57,10 @@ export default class Resume extends Component {
                           <span>&bull;</span>{" "}
                           <em className="date">{item.YearOfPassing}</em>
                         </p>
-                        <p>
+                        <p className="grade">
                           <b>Grades:</b> {item.Marks}
                         </p>
-                        <p className="info">
+                        <p className="grade">
                           Transcipt:{" "}
                           <a href={item.link} download={item.n}>
                             Download
