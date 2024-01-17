@@ -336,6 +336,16 @@ ul#nav li.current a {
   margin-top: 36px;
   list-style: none;
 }
+.skills li {
+  display: inline-block;
+  padding: 15px;
+  margin: 5px;
+  width: 200px;
+  background-color: #ccc;
+  border-radius: 3px;
+  text-align: center;
+}
+
 .bars li {
   position: relative;
   margin-bottom: 60px;
