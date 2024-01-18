@@ -541,13 +541,14 @@ ul#nav li.current a {
 }
 .button-container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .div-button {
-  width: 20%;
-  margin: 15px;
-  padding: 10px;
-  padding: 10px 20px;
+  width: 80%;
+  margin: 10px;
+  padding: 5px 10px;
   background-color: #ebeeee;
   color: #11abb0;
   border: none;
