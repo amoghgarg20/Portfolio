@@ -783,7 +783,7 @@ call-to-action .button {
 #call-to-action .button:hover,
 #call-to-action .button:active {
   background: #ffffff;
-  color: #0d0d0d;
+  color: #fff;
 }
 #call-to-action p span {
   font-family: "opensans-semibold", sans-serif;
@@ -841,7 +841,7 @@ call-to-action .button {
   content: none;
 }
 #album blockquote p {
-  font-family: "librebaskerville-italic", serif;
+  font-family: "librebaskerville", serif;
   padding: 0;
   font-size: 24px;
   line-height: 48px;
@@ -861,6 +861,9 @@ call-to-action .button {
 #album blockquote cite a:visited {
   color: #8b9798;
   border: none;
+}
+#album blockquote a:hover {
+  color: #fff;
 }
 /* ------------------------------------------------------------------
 /* g. Testimonials
