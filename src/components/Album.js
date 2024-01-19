@@ -16,9 +16,13 @@ export default class Album extends Component {
                     <li>
                       <blockquote>
                         <p>
-                          Click on the link to view my accolades.
+                          For a detailed look at my accolades, please follow the
+                          link below.
                           <br />
-                          <a href="https://drive.google.com/drive/folders/1g-uj3aeuTEZcnwG5pZLYsw2Q7ymQDsoX?usp=sharing">
+                          <a
+                            href="https://drive.google.com/drive/folders/1g-uj3aeuTEZcnwG5pZLYsw2Q7ymQDsoX?usp=sharing"
+                            target="_blank"
+                          >
                             Accolades
                           </a>
                         </p>
@@ -27,11 +31,14 @@ export default class Album extends Component {
                     <li>
                       <blockquote>
                         <p>
-                          Click on the link to gain access to view my personal
-                          album.
+                          For a detailed look at my certificates, please follow
+                          the link below.
                           <br />
-                          <a href="https://drive.google.com/drive/folders/1g-uj3aeuTEZcnwG5pZLYsw2Q7ymQDsoX?usp=sharing">
-                            Personal-Album
+                          <a
+                            href="https://drive.google.com/drive/folders/1noIc3EdbJLKO-CRVOmqJFmF0Z1rDQI2O?usp=sharing"
+                            target="_blank"
+                          >
+                            Certificates
                           </a>
                         </p>
                       </blockquote>

@@ -9,27 +9,32 @@ export default class Profile extends Component {
           <div className="row">
             <div className="twelve columns collapsed">
               <h1>
-                Check out some of my coding platform's profiles.
+                Explore my coding platform profiles.
                 <br />
               </h1>
               <div>
                 <div className="button-container">
-                  <button className="div-button">
-                    <a href="https://leetcode.com/amoghgarg20/">Leetcode</a>
-                  </button>
-                  <button className="div-button">
-                    <a href="https://codeforces.com/profile/amoghgarg20">
-                      Codeforces
-                    </a>
-                  </button>
-                  <button className="div-button">
-                    <a href="https://www.kaggle.com/amoghgarg20">Kaggle</a>
-                  </button>
-                  <button className="div-button">
-                    <a href="https://auth.geeksforgeeks.org/user/amoghgarg9/practice">
-                      GFG
-                    </a>
-                  </button>
+                  <a href="https://leetcode.com/amoghgarg20/" target="_blank">
+                    <button className="div-button">Leetcode</button>
+                  </a>
+
+                  <a
+                    href="https://codeforces.com/profile/amoghgarg20"
+                    target="_blank"
+                  >
+                    <button className="div-button">Codeforces</button>
+                  </a>
+
+                  <a href="https://www.kaggle.com/amoghgarg20" target="_blank">
+                    <button className="div-button">Kaggle</button>
+                  </a>
+
+                  <a
+                    href="https://auth.geeksforgeeks.org/user/amoghgarg9/practice"
+                    target="_blank"
+                  >
+                    <button className="div-button">GFG</button>
+                  </a>
                 </div>
               </div>
             </div>
