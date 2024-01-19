@@ -29,7 +29,7 @@ let resumeData = {
   aboutme:
     "As a final year student pursuing a degree in Computer Science and Engineering, I am eager to learn and apply my skills in the field. I have a strong foundation in programming languages such as C++ and Python, and am proficient in data structures and algorithms. I am also interested in exploring new technologies and fields such as Machine Learning and Data-Science and staying up-to-date with the latest developments in the field. I am looking for opportunities to continue learning and growing as a software engineer while making meaningful contributions to the industry",
   address: "India",
-  mobile: "8130463841",
+  mobile: "(+91) 8130463841",
   email: "amoghgarg9@gmail.com",
   education: [
     {
