@@ -1063,8 +1063,8 @@ call-to-action .button {
 
 #contact {
   background: black;
-  padding-top: 96px;
-  padding-bottom: 102px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   color: #ffffff;
   background-size: cover !important;
   -webkit-background-size: cover !important;
@@ -1107,8 +1107,8 @@ call-to-action .button {
 }
 #contact h2 {
   color: white;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 15px;
 }
 #contact h1:before {
   font-family: "FontAwesome";
@@ -1136,6 +1136,7 @@ call-to-action .button {
 
 /* contact form */
 #contact form {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 #contact label {
@@ -1158,6 +1159,7 @@ call-to-action .button {
   font-size: 15px;
   line-height: 24px;
   width: 65%;
+  border-radius: 10px;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -1241,6 +1243,13 @@ footer {
   font-size: 14px;
   text-align: center;
   position: relative;
+}
+
+footer iframe {
+  margin: 15px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 footer a,

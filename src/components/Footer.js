@@ -13,6 +13,7 @@ export default class Footer extends Component {
                 height="40%"
                 allowfullscreen=""
                 loading="lazy"
+                title="address"
               />
             </div>
             <div className="twelve columns">
@@ -36,7 +37,8 @@ export default class Footer extends Component {
             </div>
             <div class="copyright">
               <ul>
-                <li>©Amogh Garg</li>
+                <li>Last Updated Jan'2024</li>
+                <li>Copyright © Amogh Garg</li>
               </ul>
             </div>
           </div>

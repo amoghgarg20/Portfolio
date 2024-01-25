@@ -84,7 +84,7 @@ let resumeData = {
       CompanyName:
         "International Organisation of Software Developers (DEVCOMM)-NSUT",
       specialization: "Machine Learning Head",
-      YearOfLeaving: " Since 2022",
+      YearOfLeaving: "2022 - 2023",
       Description:
         "Lead a team of 10 students, worked on a project to develop a software which can be used to generate summary of webinars, mentored juniors on several ML related projects, conducted sessions and webinars on basics of ML, hosted technical fests, events and competitions related to Data-science and ML.",
     },

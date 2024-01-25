@@ -48,7 +48,7 @@ export default class ContactUs extends Component {
       <Bounce left>
         <footer>
           <section id="contact">
-            <h2>Feel free to drop a message below!</h2>
+            <h2>Feel free to drop me a message below!</h2>
             <form onSubmit={this.handleSubmit}>
               <div>
                 <label htmlFor="name">Name</label>
