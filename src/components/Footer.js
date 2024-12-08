@@ -37,7 +37,7 @@ export default class Footer extends Component {
             </div>
             <div class="copyright">
               <ul>
-                <li>Last Updated Jan'2024</li>
+                <li>Last Updated Dec'2024</li>
                 <li>Copyright © Amogh Garg</li>
               </ul>
             </div>

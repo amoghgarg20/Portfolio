@@ -27,7 +27,7 @@ let resumeData = {
     },
   ],
   aboutme:
-    "As a final year student pursuing a degree in Computer Science and Engineering, I am eager to learn and apply my skills in the field. I have a strong foundation in programming languages such as C++ and Python, and am proficient in data structures and algorithms. I am also interested in exploring new technologies and fields such as Machine Learning and Data-Science and staying up-to-date with the latest developments in the field. I am looking for opportunities to continue learning and growing as a software engineer while making meaningful contributions to the industry",
+    "As a Software Engineer at Microsoft, my current tech stack includes working with C# and .NET. I hold a BTech in Computer Science and Engineering from Netaji Subhas University of Technology (formerly NSIT), and have a strong foundation in C++ and Python, with proficiency in data structures and algorithms and System-Design. Passionate about exploring new technologies, I am particularly interested in AI and Security of Software systems, and continuously strive to stay up-to-date with the latest advancements. Eager to contribute to the industry, I seek opportunities for further growth and learning as a software engineer.",
   address: "India",
   mobile: "+(91) 8130463841",
   email: "amoghgarg9@gmail.com",
@@ -36,7 +36,7 @@ let resumeData = {
       UniversityName: "Netaji Subhas University of Technology,New Delhi",
       specialization: "B.Tech in Computer Science and Engineering",
       YearOfPassing: "2024",
-      Marks: "8.90 CGPA upto 6th Sem",
+      Marks: "8.84/10",
       link: "/images/Transcript.pdf",
       name: "Transcript",
     },
@@ -58,6 +58,16 @@ let resumeData = {
     },
   ],
   internship: [
+    {
+      OrgName: "Microsoft India (R&D) Pvt. Ltd.",
+      role: "Software Engineer",
+      location: "Bengaluru",
+      time: "Jul'24 - Present",
+      Description:
+        "Contributing to the development and enhancement of Intune, a cloud-based endpoint management product by migrating the existing system to a more robust architecture, with a focus on persistent databases and microservice architecture, ensuring enhanced reliability, security, and performance. Worked extensively with C#, .NET, and CosmosDB, leveraging deep expertise in persistent databases. Applied in-depth knowledge of security best practices throughout the software lifecycle, ensuring that all systems are designed, developed, and deployed with robust security measures.",
+      Skills:
+        "C#, .NET, CosmosDB, Microservice Arhcitecture, Persistent Databases, CI/CD",
+    },
     {
       OrgName: "Microsoft India (R&D) Pvt. Ltd.",
       role: "SWE Intern",
@@ -99,6 +109,15 @@ let resumeData = {
   ],
   skillsDescription: "Following are my technical skills:",
   skills: [
+    {
+      skillname: "C#",
+    },
+    {
+      skillname: ".NET",
+    },
+    {
+      skillname: "CosmosDB",
+    },
     {
       skillname: "Python",
     },
