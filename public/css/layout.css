@@ -1061,6 +1061,11 @@ call-to-action .button {
   display: block;
 }
 
+/* Fix for Album section - ensure slides are visible when flexslider JS isn't initialized */
+#album .flexslider .slides > li {
+  display: block;
+}
+
 /* Slider Styles */
 .slides {
   zoom: 1;
