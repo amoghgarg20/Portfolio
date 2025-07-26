@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Bounce from "react-reveal/Bounce";
+import AnimatedBounce from "./AnimatedBounce";
 export default class Porfolio extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="portfolio">
-        <Bounce right>
+        <AnimatedBounce>
           <div className="row">
             <div className="twelve columns collapsed">
               <h1>
@@ -38,7 +38,7 @@ export default class Porfolio extends Component {
               </div>
             </div>
           </div>
-        </Bounce>
+        </AnimatedBounce>
       </section>
     );
   }

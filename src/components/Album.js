@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Bounce from "react-reveal/Bounce";
+import AnimatedBounce from "./AnimatedBounce";
 export default class Album extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
-      <Bounce left>
+      <AnimatedBounce>
         <section id="album">
           <div className="text-container">
             <div className="row">
@@ -21,7 +20,7 @@ export default class Album extends Component {
                           <br />
                           <a
                             href="https://drive.google.com/drive/folders/1g-uj3aeuTEZcnwG5pZLYsw2Q7ymQDsoX?usp=sharing"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                           >
                             Accolades
                           </a>
@@ -36,7 +35,7 @@ export default class Album extends Component {
                           <br />
                           <a
                             href="https://drive.google.com/drive/folders/1noIc3EdbJLKO-CRVOmqJFmF0Z1rDQI2O?usp=sharing"
-                            target="_blank"
+                            target="_blank" rel="noreferrer"
                           >
                             Certificates
                           </a>
@@ -53,7 +52,7 @@ export default class Album extends Component {
           </div>{" "}
           {/* text-container ends */}
         </section>
-      </Bounce>
+      </AnimatedBounce>
     );
   }
 }

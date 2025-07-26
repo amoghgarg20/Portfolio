@@ -1,17 +1,16 @@
 import React, { Component } from "react";
-import Bounce from "react-reveal/Bounce";
+import AnimatedBounce from "./AnimatedBounce";
 export default class Testimonials extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
-      <Bounce right>
+      <AnimatedBounce>
         <section id="testimonials">
           <div className="text-container">
             <div className="row">
               <h1>TESTIMONIAL</h1>
               <div className="two columns header-col" />
               {/* <div className="ten columns flex-container"> */}
-              <img src="images/5.jpg" id="zoomA" />
+              <img src="images/5.jpg" id="zoomA" alt="Testimonial" />
               {/* <div className="flexslider">
                 <ul className="slides">
                   {
@@ -36,7 +35,7 @@ export default class Testimonials extends Component {
           </div>{" "}
           {/* text-container ends */}
         </section>
-      </Bounce>
+      </AnimatedBounce>
     );
   }
 }

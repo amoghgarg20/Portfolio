@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Bounce from "react-reveal/Bounce";
+import AnimatedBounce from "./AnimatedBounce";
 export default class ContactUs extends Component {
   constructor(props) {
     super(props);
@@ -45,7 +45,7 @@ export default class ContactUs extends Component {
     const { name, number, email, message } = this.state;
 
     return (
-      <Bounce left>
+      <AnimatedBounce>
         <footer>
           <section id="contact">
             <h2>Feel free to drop me a message below!</h2>
@@ -97,7 +97,7 @@ export default class ContactUs extends Component {
             </form>
           </section>
         </footer>
-      </Bounce>
+      </AnimatedBounce>
     );
   }
 }

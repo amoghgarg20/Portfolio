@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Bounce from "react-reveal/Bounce";
+import AnimatedBounce from "./AnimatedBounce";
 export default class Profile extends Component {
   render() {
-    let resumeData = this.props.resumeData;
     return (
       <section id="profile">
-        <Bounce left>
+        <AnimatedBounce>
           <div className="row">
             <div className="twelve columns collapsed">
               <h1>
@@ -14,24 +13,24 @@ export default class Profile extends Component {
               </h1>
               <div>
                 <div className="button-container">
-                  <a href="https://leetcode.com/amoghgarg20/" target="_blank">
+                  <a href="https://leetcode.com/amoghgarg20/" target="_blank" rel="noreferrer">
                     <button className="div-button">Leetcode</button>
                   </a>
 
                   <a
                     href="https://codeforces.com/profile/amoghgarg20"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     <button className="div-button">Codeforces</button>
                   </a>
 
-                  <a href="https://www.kaggle.com/amoghgarg20" target="_blank">
+                  <a href="https://www.kaggle.com/amoghgarg20" target="_blank" rel="noreferrer">
                     <button className="div-button">Kaggle</button>
                   </a>
 
                   <a
                     href="https://auth.geeksforgeeks.org/user/amoghgarg9/practice"
-                    target="_blank"
+                    target="_blank" rel="noreferrer"
                   >
                     <button className="div-button">GFG</button>
                   </a>
@@ -39,7 +38,7 @@ export default class Profile extends Component {
               </div>
             </div>
           </div>
-        </Bounce>
+        </AnimatedBounce>
       </section>
     );
   }

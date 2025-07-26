@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Bounce from "react-reveal/Bounce";
+import AnimatedBounce from "./AnimatedBounce";
 export default class Resume extends Component {
   render() {
     let resumeData = this.props.resumeData;
     return (
       <section id="resume">
-        <Bounce right>
+        <AnimatedBounce>
           <div className="row work">
             <div className="three columns header-col">
               <h1>
@@ -98,8 +98,8 @@ export default class Resume extends Component {
                 })}
             </div>
           </div>
-        </Bounce>
-        <Bounce left>
+        </AnimatedBounce>
+        <AnimatedBounce>
           <div className="row skill">
             <div className="three columns header-col">
               <h1>
@@ -122,8 +122,8 @@ export default class Resume extends Component {
               </div>
             </div>
           </div>
-        </Bounce>
-        <Bounce right>
+        </AnimatedBounce>
+        <AnimatedBounce>
           <div className="row skill">
             <div className="three columns header-col">
               <h1>
@@ -146,7 +146,7 @@ export default class Resume extends Component {
               </div>
             </div>
           </div>
-        </Bounce>
+        </AnimatedBounce>
       </section>
     );
   }
