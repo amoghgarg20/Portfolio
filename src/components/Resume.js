@@ -15,9 +15,9 @@ export default class Resume extends Component {
 
             <div className="nine columns main-col">
               {resumeData.internship &&
-                resumeData.internship.map((item) => {
+                resumeData.internship.map((item, index) => {
                   return (
-                    <div className="row item">
+                    <div key={index} className="row item">
                       <div className="twelve columns">
                         <h3>{item.OrgName}</h3>
                         <p className="info">
@@ -47,9 +47,9 @@ export default class Resume extends Component {
 
             <div className="nine columns main-col">
               {resumeData.education &&
-                resumeData.education.map((item) => {
+                resumeData.education.map((item, index) => {
                   return (
-                    <div className="row item">
+                    <div key={index} className="row item">
                       <div className="twelve columns">
                         <h3>{item.UniversityName}</h3>
                         <p className="info">
@@ -81,9 +81,9 @@ export default class Resume extends Component {
 
             <div className="nine columns main-col">
               {resumeData.work &&
-                resumeData.work.map((item) => {
+                resumeData.work.map((item, index) => {
                   return (
-                    <div className="row item">
+                    <div key={index} className="row item">
                       <div className="twelve columns">
                         <h3>{item.CompanyName}</h3>
                         <p className="info">
@@ -111,9 +111,9 @@ export default class Resume extends Component {
               <div>
                 <ul className="skills">
                   {resumeData.skills &&
-                    resumeData.skills.map((item) => {
+                    resumeData.skills.map((item, index) => {
                       return (
-                        <li>
+                        <li key={index}>
                           <h5>{item.skillname}</h5>
                         </li>
                       );
@@ -135,9 +135,9 @@ export default class Resume extends Component {
               <div>
                 <ul className="skills">
                   {resumeData.sport_skills &&
-                    resumeData.sport_skills.map((item) => {
+                    resumeData.sport_skills.map((item, index) => {
                       return (
-                        <li>
+                        <li key={index}>
                           <h5>{item.skillname}</h5>
                         </li>
                       );
