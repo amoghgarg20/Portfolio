@@ -10,9 +10,6 @@ export default class Header extends Component {
             <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
               Show navigation
             </a>
-            <button className="mobile-btn" onClick={() => document.getElementById('nav-wrap').focus()} title="Hide navigation">
-              Hide navigation
-            </button>
             <ul id="nav" className="nav">
               <li className="current">
                 <a className="smoothscroll" href="#home">
