@@ -1,6 +1,25 @@
 import React, { Component } from "react";
 import AnimatedBounce from "./AnimatedBounce";
 export default class Album extends Component {
+  componentDidMount() {
+    // Initialize flexslider after component mounts
+    if (window.jQuery) {
+      window.jQuery('#album .flexslider').flexslider({
+        namespace: "flex-",
+        controlsContainer: ".flex-container",
+        animation: 'slide',
+        controlNav: true,
+        directionNav: true,
+        smoothHeight: true,
+        slideshowSpeed: 7000,
+        animationSpeed: 600,
+        randomize: false,
+        touch: true,
+        slideshow: true
+      });
+    }
+  }
+
   render() {
     return (
       <AnimatedBounce>
