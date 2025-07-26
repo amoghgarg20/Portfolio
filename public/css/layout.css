@@ -1069,6 +1069,8 @@ call-to-action .button {
   box-shadow: none;
   overflow: hidden;
   position: relative;
+  width: 100%;
+  height: auto;
 }
 
 #album .flexslider .slides {
@@ -1076,21 +1078,45 @@ call-to-action .button {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow: hidden;
+  min-height: 50px; /* Ensure container has minimum height */
 }
 
-/* Fix for Album section - ensure slides are visible when flexslider JS isn't initialized */
+/* Fix for Album section - ensure only active slide is visible */
 #album .flexslider .slides > li {
-  display: none; /* Hidden by default */
-  position: relative;
+  display: none !important; /* Hide all slides by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 0 60px; /* Add padding to prevent overlap with navigation */
+  box-sizing: border-box;
+  opacity: 0; /* Additional layer of hiding */
+  visibility: hidden; /* Additional layer of hiding */
 }
 
-#album .flexslider .slides > li:first-child {
-  display: block; /* Show first slide by default */
+/* Show only the first slide when flexslider hasn't initialized */
+#album .flexslider .slides > li:first-child:not(.clone) {
+  display: block !important;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
 }
 
+/* Show only the active slide when flexslider is working */
 #album .flexslider .slides > li.flex-active-slide {
-  display: block !important; /* Show active slide */
+  display: block !important;
+  position: relative !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Hide all clone slides created by flexslider */
+#album .flexslider .slides > li.clone {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 /* Navigation arrows for album slider */
