@@ -1,41 +1,46 @@
-import React, { Component } from "react";
+import React, { memo, useState } from "react";
 import AnimatedBounce from "./AnimatedBounce";
-export default class Testimonials extends Component {
-  render() {
-    return (
-      <AnimatedBounce>
-        <section id="testimonials">
-          <div className="text-container">
-            <div className="row">
-              <h1>TESTIMONIAL</h1>
-              <div className="two columns header-col" />
-              {/* <div className="ten columns flex-container"> */}
-              <img src="images/5.jpg" id="zoomA" alt="Testimonial" />
-              {/* <div className="flexslider">
-                <ul className="slides">
-                  {
-                    resumeData.testimonials && resumeData.testimonials.map((item)=>{
-                      return(
-                        <li>
-                          <blockquote>
-                            <p>
-                            {item.description}
-                            </p>
-                            
-                          </blockquote>
-                        </li>
-                      )
-                    })
-                  }
-                </ul>
-              </div> div.flexslider ends */}
-              {/* </div> div.flex-container ends */}
-            </div>{" "}
-            {/* row ends */}
-          </div>{" "}
-          {/* text-container ends */}
-        </section>
-      </AnimatedBounce>
-    );
-  }
-}
+import LazyImage from "./LazyImage";
+
+const Testimonials = memo(() => {
+  const [imageError, setImageError] = useState(false);
+
+  const handleImageError = () => {
+    setImageError(true);
+  };
+
+  return (
+    <AnimatedBounce>
+      <section id="testimonials">
+        <div className="text-container">
+          <div className="row">
+            <h1>TESTIMONIAL</h1>
+            <div className="two columns header-col" />
+            <div className="testimonial-image-container">
+              {!imageError ? (
+                <LazyImage 
+                  src="images/5.jpg" 
+                  alt="Testimonial showcase" 
+                  className="testimonial-image" 
+                  loading="lazy"
+                  onError={handleImageError}
+                />
+              ) : (
+                <div className="testimonial-image-placeholder">
+                  <div className="placeholder-content">
+                    <h3>Portfolio Showcase</h3>
+                    <p>View my work and projects</p>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+    </AnimatedBounce>
+  );
+});
+
+Testimonials.displayName = "Testimonials";
+
+export default Testimonials;
