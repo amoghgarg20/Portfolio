@@ -907,6 +907,56 @@ call-to-action .button {
   float: left;
   color: #fff;
 }
+.testimonial-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.testimonial-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform ease-in-out 0.3s;
+}
+
+.testimonial-image:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-image-placeholder {
+  max-width: 600px;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.placeholder-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.placeholder-content p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Legacy support for existing #zoomA */
 #zoomA {
   margin-left: 150px;
   width: 600px;
