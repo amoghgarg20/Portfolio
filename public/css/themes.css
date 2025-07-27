@@ -1,0 +1,212 @@
+/* CSS Custom Properties for Theme Support */
+
+:root {
+  /* Default (Dark) Theme Colors */
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #161415;
+  --bg-accent: #2f2d2e;
+  --text-primary: #ffffff;
+  --text-secondary: #a8a8a8;
+  --text-muted: #838C95;
+  --text-heading: #ffffff;
+  --border-color: rgba(150, 150, 150, 0.1);
+  --accent-color: #11ABB0;
+  --hover-bg: rgba(255, 255, 255, 0.1);
+  
+  /* Theme transition */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-accent: #e9ecef;
+  --text-primary: #2c3e50;
+  --text-secondary: #5a6c7d;
+  --text-muted: #6c757d;
+  --text-heading: #2c3e50;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --accent-color: #007bff;
+  --hover-bg: rgba(0, 0, 0, 0.05);
+}
+
+/* Apply theme variables to existing elements */
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-muted) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Update header background for light mode */
+[data-theme="light"] header {
+  background: var(--bg-secondary) url("https://media.giphy.com/media/cQhmYBg9qPaLYdqajA/giphy.gif") no-repeat top center !important;
+  background-size: cover !important;
+}
+
+/* Light mode header overlay - improved for better appearance */
+[data-theme="light"] header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.95) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(248, 249, 250, 0.95) 100%);
+  z-index: 1;
+}
+
+[data-theme="light"] header * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Typography updates for light mode */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] .banner-text h1 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] .banner-text h3 {
+  color: var(--text-secondary) !important;
+}
+
+/* Navigation updates for light mode */
+[data-theme="light"] #nav-wrap {
+  background: var(--bg-primary) !important;
+}
+
+[data-theme="light"] #nav a {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] #nav a:hover {
+  color: var(--accent-color) !important;
+  background: var(--hover-bg) !important;
+}
+
+/* Section backgrounds for light mode */
+[data-theme="light"] #about,
+[data-theme="light"] #resume,
+[data-theme="light"] #portfolio,
+[data-theme="light"] #testimonials,
+[data-theme="light"] #contact,
+[data-theme="light"] #album {
+  background: var(--bg-primary) !important;
+  color: var(--text-muted) !important;
+}
+
+/* Buttons and interactive elements */
+[data-theme="light"] .button,
+[data-theme="light"] button {
+  background: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+[data-theme="light"] .button:hover,
+[data-theme="light"] button:hover {
+  background: var(--text-heading) !important;
+  border-color: var(--text-heading) !important;
+}
+
+/* Borders and dividers */
+[data-theme="light"] hr,
+[data-theme="light"] .border,
+[data-theme="light"] blockquote {
+  border-color: var(--border-color) !important;
+}
+
+/* Smooth transitions for all themed elements */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Album section specific light mode fixes */
+[data-theme="light"] #album h1 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #album blockquote p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] #album blockquote cite {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="light"] #album blockquote cite a,
+[data-theme="light"] #album blockquote cite a:visited {
+  color: var(--accent-color) !important;
+}
+
+[data-theme="light"] #album blockquote a:hover {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #album .header-col h1:before {
+  color: var(--text-heading) !important;
+}
+
+/* Contact section specific light mode fixes */
+[data-theme="light"] #contact h1,
+[data-theme="light"] #contact h2,
+[data-theme="light"] #contact h4 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #contact h1:before {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #contact label {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #contact input,
+[data-theme="light"] #contact textarea,
+[data-theme="light"] #contact select {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+[data-theme="light"] #contact input:focus,
+[data-theme="light"] #contact textarea:focus,
+[data-theme="light"] #contact select:focus {
+  background: var(--bg-accent) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--accent-color) !important;
+}
+
+[data-theme="light"] #contact button.submit,
+[data-theme="light"] #contact button[type="submit"] {
+  background: var(--accent-color) !important;
+  color: white !important;
+  border: none !important;
+}
+
+[data-theme="light"] #contact button.submit:hover,
+[data-theme="light"] #contact button[type="submit"]:hover {
+  background: var(--text-heading) !important;
+  color: white !important;
+}
+
+/* Footer section styling for light mode */
+[data-theme="light"] footer {
+  background: var(--bg-primary) !important;
+  color: var(--text-muted) !important;
+}
+
+[data-theme="light"] #footer {
+  background: var(--bg-primary) !important;
+  color: var(--text-muted) !important;
+}

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Typewriter from "typewriter-effect";
+import ThemeToggle from "./ThemeToggle";
+
 export default class Header extends Component {
   render() {
     let resumeData = this.props.resumeData;
@@ -50,6 +52,9 @@ export default class Header extends Component {
                 <a className="smoothscroll" href="#contact">
                   Contact
                 </a>
+              </li>
+              <li>
+                <ThemeToggle />
               </li>
             </ul>
           </nav>
