@@ -44,7 +44,7 @@ body {
   background-size: cover !important;
 }
 
-/* Light mode header overlay */
+/* Light mode header overlay - improved for better appearance */
 [data-theme="light"] header:after {
   content: "";
   position: absolute;
@@ -52,7 +52,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(135deg, rgba(248, 249, 250, 0.95) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(248, 249, 250, 0.95) 100%);
   z-index: 1;
 }
 
@@ -98,7 +98,8 @@ body {
 [data-theme="light"] #resume,
 [data-theme="light"] #portfolio,
 [data-theme="light"] #testimonials,
-[data-theme="light"] #contact {
+[data-theme="light"] #contact,
+[data-theme="light"] #album {
   background: var(--bg-primary) !important;
   color: var(--text-muted) !important;
 }
@@ -127,4 +128,85 @@ body {
 /* Smooth transitions for all themed elements */
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Album section specific light mode fixes */
+[data-theme="light"] #album h1 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #album blockquote p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="light"] #album blockquote cite {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="light"] #album blockquote cite a,
+[data-theme="light"] #album blockquote cite a:visited {
+  color: var(--accent-color) !important;
+}
+
+[data-theme="light"] #album blockquote a:hover {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #album .header-col h1:before {
+  color: var(--text-heading) !important;
+}
+
+/* Contact section specific light mode fixes */
+[data-theme="light"] #contact h1,
+[data-theme="light"] #contact h2,
+[data-theme="light"] #contact h4 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #contact h1:before {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #contact label {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #contact input,
+[data-theme="light"] #contact textarea,
+[data-theme="light"] #contact select {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+[data-theme="light"] #contact input:focus,
+[data-theme="light"] #contact textarea:focus,
+[data-theme="light"] #contact select:focus {
+  background: var(--bg-accent) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--accent-color) !important;
+}
+
+[data-theme="light"] #contact button.submit,
+[data-theme="light"] #contact button[type="submit"] {
+  background: var(--accent-color) !important;
+  color: white !important;
+  border: none !important;
+}
+
+[data-theme="light"] #contact button.submit:hover,
+[data-theme="light"] #contact button[type="submit"]:hover {
+  background: var(--text-heading) !important;
+  color: white !important;
+}
+
+/* Footer section styling for light mode */
+[data-theme="light"] footer {
+  background: var(--bg-primary) !important;
+  color: var(--text-muted) !important;
+}
+
+[data-theme="light"] #footer {
+  background: var(--bg-primary) !important;
+  color: var(--text-muted) !important;
 }
