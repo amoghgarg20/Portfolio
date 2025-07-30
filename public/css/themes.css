@@ -106,9 +106,8 @@ p {
   color: var(--text-secondary) !important;
 }
 
-/* Enhanced Header and Banner */
+/* Enhanced Header and Banner - Preserve original dark mode background */
 header {
-  background: var(--bg-primary) !important;
   position: relative;
 }
 
@@ -177,6 +176,7 @@ header {
 #about,
 #resume,
 #portfolio,
+#profile,
 #testimonials,
 #contact,
 #album {
@@ -442,6 +442,20 @@ footer,
 
 [data-theme="light"] p {
   color: var(--text-secondary) !important;
+}
+
+/* Technical Skills specific fixes for dark mode visibility */
+.skills h5 {
+  color: var(--text-heading) !important;
+}
+
+/* Profile section heading fixes */
+#profile h1 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] #profile h1 {
+  color: var(--text-heading) !important;
 }
 
 /* Let original responsive design handle font sizing */
