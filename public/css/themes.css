@@ -465,13 +465,34 @@ footer,
   color: var(--text-heading) !important;
 }
 
-/* Portfolio cards theme-aware background styling */
+/* Portfolio Grid Layout Fixes - Clean Alignment */
+#portfolio-wrapper {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 30px !important;
+  padding: 20px !important;
+}
+
+/* Ensure equal heights for all portfolio items */
+.portfolio-item {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
 .portfolio-item .item-wrap {
   background: var(--bg-card) !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 300px !important; /* Fixed height for consistent layout */
 }
 
 .portfolio-item .item-wrap .overlay {
   background-color: var(--bg-card) !important;
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
 }
 
 /* Dark mode portfolio styling (preserve original dark appearance) */
@@ -495,21 +516,69 @@ footer,
 }
 
 /* Portfolio text colors for better readability */
+.portfolio-item .portfolio-item-meta {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
 .portfolio-item .portfolio-item-meta h5 {
   color: var(--text-heading) !important;
+  margin-bottom: 10px !important;
 }
 
 .portfolio-item .portfolio-item-meta p {
   color: var(--text-secondary) !important;
+  margin-bottom: 15px !important;
+  flex: 1 !important;
 }
 
 /* Ensure portfolio links maintain proper color */
 .portfolio-item .portfolio-item-meta a {
   color: var(--accent-color) !important;
+  margin-top: auto !important;
 }
 
 .portfolio-item .portfolio-item-meta a:hover {
   color: var(--accent-secondary) !important;
 }
 
+/* Responsive grid adjustments */
+@media only screen and (max-width: 900px) {
+  #portfolio-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 20px !important;
+  }
+  
+  .portfolio-item .item-wrap {
+    height: 280px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #portfolio-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+  
+  .portfolio-item .item-wrap {
+    height: 250px !important;
+  }
+}
+
 /* Let original responsive design handle font sizing */
+
+/* Portfolio Grid System Override for Clean Alignment */
+.bgrid-quarters,
+.s-bgrid-thirds {
+  display: block !important;
+}
+
+.bgrid-quarters .columns,
+.s-bgrid-thirds .columns {
+  width: auto !important;
+  float: none !important;
+  margin-bottom: 0 !important;
+}
