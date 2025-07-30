@@ -1,41 +1,163 @@
 /* CSS Custom Properties for Theme Support */
 
 :root {
-  /* Default (Dark) Theme Colors */
-  --bg-primary: #0f0f0f;
-  --bg-secondary: #161415;
-  --bg-accent: #2f2d2e;
-  --text-primary: #ffffff;
-  --text-secondary: #a8a8a8;
-  --text-muted: #838C95;
+  /* Default (Dark) Theme Colors - Modern Dark Palette */
+  --bg-primary: #0a0a0b;
+  --bg-secondary: #1a1a1c;
+  --bg-accent: #262629;
+  --bg-card: #1e1e21;
+  --text-primary: #f8f9fa;
+  --text-secondary: #b8bcc8;
+  --text-muted: #8b91a0;
   --text-heading: #ffffff;
-  --border-color: rgba(150, 150, 150, 0.1);
-  --accent-color: #11ABB0;
-  --hover-bg: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(184, 188, 200, 0.12);
+  --accent-color: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --hover-bg: rgba(99, 102, 241, 0.1);
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  
+  /* Typography Variables */
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
   
   /* Theme transition */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Light Theme */
+/* Light Theme - Modern Light Palette */
 [data-theme="light"] {
   --bg-primary: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --bg-accent: #e9ecef;
-  --text-primary: #2c3e50;
-  --text-secondary: #5a6c7d;
-  --text-muted: #6c757d;
-  --text-heading: #2c3e50;
-  --border-color: rgba(0, 0, 0, 0.1);
-  --accent-color: #007bff;
-  --hover-bg: rgba(0, 0, 0, 0.05);
+  --bg-secondary: #f8fafc;
+  --bg-accent: #f1f5f9;
+  --bg-card: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-heading: #0f172a;
+  --border-color: rgba(71, 85, 105, 0.12);
+  --accent-color: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --hover-bg: rgba(99, 102, 241, 0.05);
+  --success-color: #059669;
+  --warning-color: #d97706;
 }
 
 /* Apply theme variables to existing elements */
 body {
   background-color: var(--bg-primary) !important;
-  color: var(--text-muted) !important;
+  color: var(--text-secondary) !important;
+  font-family: var(--font-body) !important;
+  line-height: var(--leading-relaxed) !important;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Enhanced Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading) !important;
+  color: var(--text-heading) !important;
+  font-weight: 700;
+  line-height: var(--leading-tight) !important;
+  margin-bottom: 0.75em;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: var(--text-5xl) !important;
+  font-weight: 800 !important;
+  line-height: var(--leading-tight) !important;
+}
+
+h2 {
+  font-size: var(--text-4xl) !important;
+  font-weight: 700 !important;
+}
+
+h3 {
+  font-size: var(--text-3xl) !important;
+  font-weight: 600 !important;
+}
+
+h4 {
+  font-size: var(--text-2xl) !important;
+  font-weight: 600 !important;
+}
+
+h5 {
+  font-size: var(--text-xl) !important;
+  font-weight: 500 !important;
+}
+
+h6 {
+  font-size: var(--text-lg) !important;
+  font-weight: 500 !important;
+}
+
+/* Body text improvements */
+p {
+  font-family: var(--font-body) !important;
+  color: var(--text-secondary) !important;
+  line-height: var(--leading-relaxed) !important;
+  font-size: var(--text-base) !important;
+  margin-bottom: 1.25em;
+}
+
+/* Enhanced text styles */
+.text-large {
+  font-size: var(--text-lg) !important;
+  line-height: var(--leading-relaxed) !important;
+}
+
+.text-small {
+  font-size: var(--text-sm) !important;
+  line-height: var(--leading-normal) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Banner text specific styling */
+.banner-text h1 {
+  font-family: var(--font-heading) !important;
+  font-weight: 800 !important;
+  font-size: clamp(var(--text-4xl), 5vw, var(--text-6xl)) !important;
+  line-height: var(--leading-tight) !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.banner-text h3 {
+  font-family: var(--font-body) !important;
+  font-weight: 400 !important;
+  font-size: var(--text-xl) !important;
+  line-height: var(--leading-relaxed) !important;
+  opacity: 0.9;
+}
+
+/* Enhanced Header and Banner */
+header {
+  background: var(--bg-primary) !important;
+  position: relative;
 }
 
 /* Update header background for light mode */
@@ -61,36 +183,36 @@ body {
   z-index: 2;
 }
 
-/* Typography updates for light mode */
-[data-theme="light"] h1,
-[data-theme="light"] h2,
-[data-theme="light"] h3,
-[data-theme="light"] h4,
-[data-theme="light"] h5,
-[data-theme="light"] h6 {
-  color: var(--text-heading) !important;
+/* Dark mode header styling */
+header {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%) !important;
 }
 
+/* Banner text enhancements */
+.banner-text {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.banner-text h1 {
+  color: var(--text-heading) !important;
+  margin-bottom: 1rem !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner-text h3 {
+  color: var(--text-secondary) !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Light mode banner text */
 [data-theme="light"] .banner-text h1 {
   color: var(--text-heading) !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .banner-text h3 {
   color: var(--text-secondary) !important;
-}
-
-/* Navigation updates for light mode */
-[data-theme="light"] #nav-wrap {
-  background: var(--bg-primary) !important;
-}
-
-[data-theme="light"] #nav a {
-  color: var(--text-primary) !important;
-}
-
-[data-theme="light"] #nav a:hover {
-  color: var(--accent-color) !important;
-  background: var(--hover-bg) !important;
 }
 
 /* Section backgrounds for light mode */
@@ -101,21 +223,126 @@ body {
 [data-theme="light"] #contact,
 [data-theme="light"] #album {
   background: var(--bg-primary) !important;
-  color: var(--text-muted) !important;
+  color: var(--text-secondary) !important;
 }
 
-/* Buttons and interactive elements */
-[data-theme="light"] .button,
-[data-theme="light"] button {
+/* Enhanced section styling for both themes */
+#about,
+#resume,
+#portfolio,
+#testimonials,
+#contact,
+#album {
+  background: var(--bg-primary) !important;
+  color: var(--text-secondary) !important;
+}
+
+/* Alternating section backgrounds for better visual separation */
+#resume,
+#testimonials {
+  background: var(--bg-secondary) !important;
+}
+
+[data-theme="light"] #resume,
+[data-theme="light"] #testimonials {
+  background: var(--bg-secondary) !important;
+}
+
+/* Card-like elements */
+.card,
+.portfolio-item,
+.testimonial-item {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.3s ease !important;
+}
+
+.card:hover,
+.portfolio-item:hover,
+.testimonial-item:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Enhanced Buttons and interactive elements */
+.button,
+button {
   background: var(--accent-color) !important;
+  border: 2px solid var(--accent-color) !important;
+  color: white !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 600 !important;
+  font-size: var(--text-sm) !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+.button:hover,
+button:hover {
+  background: var(--accent-secondary) !important;
+  border-color: var(--accent-secondary) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3) !important;
+}
+
+.button.secondary,
+button.secondary {
+  background: transparent !important;
   border-color: var(--accent-color) !important;
+  color: var(--accent-color) !important;
+}
+
+.button.secondary:hover,
+button.secondary:hover {
+  background: var(--accent-color) !important;
   color: white !important;
 }
 
-[data-theme="light"] .button:hover,
-[data-theme="light"] button:hover {
-  background: var(--text-heading) !important;
-  border-color: var(--text-heading) !important;
+/* Navigation improvements */
+#nav-wrap {
+  background: var(--bg-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#nav a {
+  color: var(--text-secondary) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 500 !important;
+  font-size: var(--text-sm) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+}
+
+#nav a:hover,
+#nav a.current {
+  color: var(--accent-color) !important;
+  background: var(--hover-bg) !important;
+}
+
+/* Light mode navigation */
+[data-theme="light"] #nav-wrap {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+[data-theme="light"] #nav a {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="light"] #nav a:hover,
+[data-theme="light"] #nav a.current {
+  color: var(--accent-color) !important;
+  background: var(--hover-bg) !important;
 }
 
 /* Borders and dividers */
@@ -156,48 +383,60 @@ body {
   color: var(--text-heading) !important;
 }
 
-/* Contact section specific light mode fixes */
-[data-theme="light"] #contact h1,
-[data-theme="light"] #contact h2,
-[data-theme="light"] #contact h4 {
-  color: var(--text-heading) !important;
+/* Enhanced Form Elements */
+input,
+textarea,
+select {
+  background: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 8px !important;
+  padding: 0.75rem 1rem !important;
+  font-family: var(--font-body) !important;
+  font-size: var(--text-base) !important;
+  line-height: var(--leading-normal) !important;
+  transition: all 0.3s ease !important;
 }
 
-[data-theme="light"] #contact h1:before {
-  color: var(--text-heading) !important;
+input:focus,
+textarea:focus,
+select:focus {
+  background: var(--bg-primary) !important;
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+  outline: none !important;
 }
 
-[data-theme="light"] #contact label {
+label {
   color: var(--text-heading) !important;
+  font-family: var(--font-heading) !important;
+  font-weight: 500 !important;
+  font-size: var(--text-sm) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  margin-bottom: 0.5rem !important;
+  display: block !important;
 }
 
-[data-theme="light"] #contact input,
-[data-theme="light"] #contact textarea,
-[data-theme="light"] #contact select {
-  background: var(--bg-secondary) !important;
+/* Light mode form elements */
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+  background: var(--bg-card) !important;
   color: var(--text-primary) !important;
   border: 1px solid var(--border-color) !important;
 }
 
-[data-theme="light"] #contact input:focus,
-[data-theme="light"] #contact textarea:focus,
-[data-theme="light"] #contact select:focus {
-  background: var(--bg-accent) !important;
-  color: var(--text-primary) !important;
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus,
+[data-theme="light"] select:focus {
+  background: var(--bg-primary) !important;
   border-color: var(--accent-color) !important;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
 }
 
-[data-theme="light"] #contact button.submit,
-[data-theme="light"] #contact button[type="submit"] {
-  background: var(--accent-color) !important;
-  color: white !important;
-  border: none !important;
-}
-
-[data-theme="light"] #contact button.submit:hover,
-[data-theme="light"] #contact button[type="submit"]:hover {
-  background: var(--text-heading) !important;
-  color: white !important;
+[data-theme="light"] label {
+  color: var(--text-heading) !important;
 }
 
 /* Footer section styling for light mode */
@@ -209,4 +448,74 @@ body {
 [data-theme="light"] #footer {
   background: var(--bg-primary) !important;
   color: var(--text-muted) !important;
+}
+
+/* Links and anchors */
+a {
+  color: var(--accent-color) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+a:hover {
+  color: var(--accent-secondary) !important;
+  text-decoration: underline !important;
+}
+
+a:visited {
+  color: var(--accent-color) !important;
+}
+
+/* Enhanced blockquotes */
+blockquote {
+  border-left: 4px solid var(--accent-color) !important;
+  padding-left: 1.5rem !important;
+  margin-left: 0 !important;
+  font-style: italic !important;
+  color: var(--text-secondary) !important;
+}
+
+/* Footer styling */
+footer,
+#footer {
+  background: var(--bg-secondary) !important;
+  color: var(--text-muted) !important;
+  border-top: 1px solid var(--border-color) !important;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--text-4xl) !important;
+  }
+  
+  h2 {
+    font-size: var(--text-3xl) !important;
+  }
+  
+  h3 {
+    font-size: var(--text-2xl) !important;
+  }
+  
+  .banner-text h1 {
+    font-size: var(--text-4xl) !important;
+  }
+  
+  .banner-text h3 {
+    font-size: var(--text-lg) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: var(--text-3xl) !important;
+  }
+  
+  .banner-text h1 {
+    font-size: var(--text-3xl) !important;
+  }
+  
+  .banner-text h3 {
+    font-size: var(--text-base) !important;
+  }
 }
