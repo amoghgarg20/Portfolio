@@ -74,6 +74,32 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading) !important;
   color: var(--text-heading) !important;
+  font-weight: 700 !important; /* Make all headings bolder */
+}
+
+/* Make headings slightly bigger for better hierarchy */
+h1 {
+  font-size: 1.1em !important;
+}
+
+h2 {
+  font-size: 1.08em !important;
+}
+
+h3 {
+  font-size: 1.06em !important;
+}
+
+h4 {
+  font-size: 1.04em !important;
+}
+
+h5 {
+  font-size: 1.02em !important;
+}
+
+h6 {
+  font-size: 1.01em !important;
 }
 
 /* Body text improvements - Preserve Original Sizing */
@@ -99,6 +125,7 @@ p {
 .banner-text h1 {
   font-family: var(--font-heading) !important;
   color: var(--text-heading) !important;
+  font-weight: 900 !important; /* Make "Amogh Garg" much bolder */
 }
 
 .banner-text h3 {
