@@ -463,4 +463,51 @@ footer,
   color: var(--text-heading) !important;
 }
 
+/* Portfolio cards theme-aware background styling */
+.portfolio-item .item-wrap {
+  background: var(--bg-card) !important;
+}
+
+.portfolio-item .item-wrap .overlay {
+  background-color: var(--bg-card) !important;
+}
+
+/* Dark mode portfolio styling (preserve original dark appearance) */
+[data-theme="dark"] .portfolio-item .item-wrap,
+:root .portfolio-item .item-wrap {
+  background: #1a1a1c !important;
+}
+
+[data-theme="dark"] .portfolio-item .item-wrap .overlay,
+:root .portfolio-item .item-wrap .overlay {
+  background-color: #1a1a1c !important;
+}
+
+/* Light mode portfolio styling */
+[data-theme="light"] .portfolio-item .item-wrap {
+  background: var(--bg-card) !important;
+}
+
+[data-theme="light"] .portfolio-item .item-wrap .overlay {
+  background-color: var(--bg-card) !important;
+}
+
+/* Portfolio text colors for better readability */
+.portfolio-item .portfolio-item-meta h5 {
+  color: var(--text-heading) !important;
+}
+
+.portfolio-item .portfolio-item-meta p {
+  color: var(--text-secondary) !important;
+}
+
+/* Ensure portfolio links maintain proper color */
+.portfolio-item .portfolio-item-meta a {
+  color: var(--accent-color) !important;
+}
+
+.portfolio-item .portfolio-item-meta a:hover {
+  color: var(--accent-secondary) !important;
+}
+
 /* Let original responsive design handle font sizing */
