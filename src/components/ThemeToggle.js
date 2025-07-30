@@ -32,7 +32,7 @@ const ThemeToggle = () => {
     >
       <div className="theme-toggle-track">
         <div className="theme-toggle-thumb">
-          {isDarkMode ? '🌙' : '☀️'}
+          {isDarkMode ? '🌜' : '☀️'}
         </div>
       </div>
     </button>
