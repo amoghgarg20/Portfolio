@@ -23,30 +23,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    align-items: stretch; /* Ensure equal height cards */
-    justify-items: center; /* Center align cards */
   }
   
   #portfolio-wrapper .columns {
-    width: 100%;
-    max-width: 320px; /* Prevent cards from getting too wide */
+    width: auto;
     margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #portfolio-wrapper .portfolio-item {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #portfolio-wrapper .portfolio-item .item-wrap {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 250px; /* Consistent card height */
   }
 }
 
@@ -57,30 +38,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    align-items: stretch;
-    justify-items: center;
   }
   
   #portfolio-wrapper .columns {
-    width: 100%;
-    max-width: 400px;
+    width: auto;
     margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #portfolio-wrapper .portfolio-item {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #portfolio-wrapper .portfolio-item .item-wrap {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 250px;
   }
   
   /* Better form layout for tablet landscape */
@@ -190,30 +152,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    align-items: stretch;
-    justify-items: center;
   }
   
   #portfolio-wrapper .columns {
-    width: 100%;
-    max-width: 350px;
+    width: auto;
     margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #portfolio-wrapper .portfolio-item {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #portfolio-wrapper .portfolio-item .item-wrap {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 250px;
   }
   
   header .banner-text h1 {
