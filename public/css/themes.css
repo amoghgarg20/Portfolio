@@ -67,91 +67,43 @@ body {
   background-color: var(--bg-primary) !important;
   color: var(--text-secondary) !important;
   font-family: var(--font-body) !important;
-  line-height: var(--leading-relaxed) !important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Enhanced Typography */
+/* Enhanced Typography - Preserve Original Sizing */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading) !important;
   color: var(--text-heading) !important;
-  font-weight: 700;
-  line-height: var(--leading-tight) !important;
-  margin-bottom: 0.75em;
-  letter-spacing: -0.025em;
 }
 
-h1 {
-  font-size: var(--text-5xl) !important;
-  font-weight: 800 !important;
-  line-height: var(--leading-tight) !important;
-}
-
-h2 {
-  font-size: var(--text-4xl) !important;
-  font-weight: 700 !important;
-}
-
-h3 {
-  font-size: var(--text-3xl) !important;
-  font-weight: 600 !important;
-}
-
-h4 {
-  font-size: var(--text-2xl) !important;
-  font-weight: 600 !important;
-}
-
-h5 {
-  font-size: var(--text-xl) !important;
-  font-weight: 500 !important;
-}
-
-h6 {
-  font-size: var(--text-lg) !important;
-  font-weight: 500 !important;
-}
-
-/* Body text improvements */
+/* Body text improvements - Preserve Original Sizing */
 p {
   font-family: var(--font-body) !important;
   color: var(--text-secondary) !important;
-  line-height: var(--leading-relaxed) !important;
-  font-size: var(--text-base) !important;
-  margin-bottom: 1.25em;
 }
 
-/* Enhanced text styles */
+/* Enhanced text styles - Non-intrusive */
 .text-large {
-  font-size: var(--text-lg) !important;
-  line-height: var(--leading-relaxed) !important;
+  font-size: 1.2em;
 }
 
 .text-small {
-  font-size: var(--text-sm) !important;
-  line-height: var(--leading-normal) !important;
+  font-size: 0.9em;
 }
 
 .text-muted {
   color: var(--text-muted) !important;
 }
 
-/* Banner text specific styling */
+/* Banner text specific styling - Preserve Original Scale */
 .banner-text h1 {
   font-family: var(--font-heading) !important;
-  font-weight: 800 !important;
-  font-size: clamp(var(--text-4xl), 5vw, var(--text-6xl)) !important;
-  line-height: var(--leading-tight) !important;
-  letter-spacing: -0.02em !important;
-  margin-bottom: 0.5em !important;
+  color: var(--text-heading) !important;
 }
 
 .banner-text h3 {
   font-family: var(--font-body) !important;
-  font-weight: 400 !important;
-  font-size: var(--text-xl) !important;
-  line-height: var(--leading-relaxed) !important;
-  opacity: 0.9;
+  color: var(--text-secondary) !important;
 }
 
 /* Enhanced Header and Banner */
@@ -166,7 +118,7 @@ header {
   background-size: cover !important;
 }
 
-/* Light mode header overlay - improved for better appearance */
+/* Light mode header overlay - subtle for better readability */
 [data-theme="light"] header:after {
   content: "";
   position: absolute;
@@ -174,18 +126,13 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(248, 249, 250, 0.95) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(248, 249, 250, 0.95) 100%);
+  background: rgba(255, 255, 255, 0.85);
   z-index: 1;
 }
 
 [data-theme="light"] header * {
   position: relative;
   z-index: 2;
-}
-
-/* Dark mode header styling */
-header {
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%) !important;
 }
 
 /* Banner text enhancements */
@@ -274,13 +221,7 @@ button {
   border: 2px solid var(--accent-color) !important;
   color: white !important;
   font-family: var(--font-heading) !important;
-  font-weight: 600 !important;
-  font-size: var(--text-sm) !important;
-  padding: 0.75rem 1.5rem !important;
-  border-radius: 8px !important;
   transition: all 0.3s ease !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
 }
 
 .button:hover,
@@ -314,12 +255,6 @@ button.secondary:hover {
 #nav a {
   color: var(--text-secondary) !important;
   font-family: var(--font-heading) !important;
-  font-weight: 500 !important;
-  font-size: var(--text-sm) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  padding: 0.75rem 1rem !important;
-  border-radius: 6px !important;
   transition: all 0.3s ease !important;
 }
 
@@ -390,11 +325,7 @@ select {
   background: var(--bg-card) !important;
   color: var(--text-primary) !important;
   border: 1px solid var(--border-color) !important;
-  border-radius: 8px !important;
-  padding: 0.75rem 1rem !important;
   font-family: var(--font-body) !important;
-  font-size: var(--text-base) !important;
-  line-height: var(--leading-normal) !important;
   transition: all 0.3s ease !important;
 }
 
@@ -410,12 +341,6 @@ select:focus {
 label {
   color: var(--text-heading) !important;
   font-family: var(--font-heading) !important;
-  font-weight: 500 !important;
-  font-size: var(--text-sm) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  margin-bottom: 0.5rem !important;
-  display: block !important;
 }
 
 /* Light mode form elements */
@@ -483,39 +408,40 @@ footer,
   border-top: 1px solid var(--border-color) !important;
 }
 
-/* Responsive typography */
-@media (max-width: 768px) {
-  h1 {
-    font-size: var(--text-4xl) !important;
-  }
-  
-  h2 {
-    font-size: var(--text-3xl) !important;
-  }
-  
-  h3 {
-    font-size: var(--text-2xl) !important;
-  }
-  
-  .banner-text h1 {
-    font-size: var(--text-4xl) !important;
-  }
-  
-  .banner-text h3 {
-    font-size: var(--text-lg) !important;
-  }
+/* Portfolio item specific fixes for light mode readability */
+.portfolio-item .portfolio-item-meta h5 {
+  color: var(--text-heading) !important;
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: var(--text-3xl) !important;
-  }
-  
-  .banner-text h1 {
-    font-size: var(--text-3xl) !important;
-  }
-  
-  .banner-text h3 {
-    font-size: var(--text-base) !important;
-  }
+.portfolio-item .portfolio-item-meta p {
+  color: var(--text-secondary) !important;
 }
+
+/* Fix hardcoded white text that becomes invisible in light mode */
+[data-theme="light"] .portfolio-item .portfolio-item-meta h5 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] .portfolio-item .portfolio-item-meta p {
+  color: var(--text-secondary) !important;
+}
+
+/* General fix for any hardcoded white text in light mode */
+[data-theme="light"] * {
+  color: inherit;
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2, 
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  color: var(--text-heading) !important;
+}
+
+[data-theme="light"] p {
+  color: var(--text-secondary) !important;
+}
+
+/* Let original responsive design handle font sizing */
